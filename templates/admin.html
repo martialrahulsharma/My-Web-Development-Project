@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+{% block title %} admin login {% endblock title %}
+{% block BlockName %}
+<div class="hvb">
+  <form action="{{url_for('login')}}" method="post">
+      <div class="logo-container">
+          <i class="fa fa-user-circle-o" aria-hidden="true" style="font-size: 100px; color: white;"></i>
+          <h2 style="color: white; text-shadow: 5px 10px 10px;">Admin Login</h2>
+          <p style="color: rgb(22, 235, 86);">{{ msg }}</p>
+      </div>
+      <div class="hvb-container">               
+          <i class="fa fa-user icon" style="font-size:45px; color: white; background-color: black;"></i>     
+          <input type="email" class="input-field" placeholder="Username" name="email" required>
+      </div>
+      <div class="hvb-container">   
+          <i class="fa fa-lock icon" style="font-size:45px; color: white; background-color: black;"></i>     
+          <input type="password" class="input-field input-control" placeholder="Password" name="passw" required>
+          <i class="fa fa-eye-slash password-show" style="font-size: 40px; color: rgb(245, 17, 17); position: absolute; right: 25px;"></i>
+      </div>
+      <div class="btn-container">
+          <button type="submit" class="login-btn">Login</button>
+          <a href="{{url_for('signup')}}" class="login-btn">Signup</a>
+          <a href="{{url_for('forgate_password')}}" class="login-btn">Forgate Password</a>
+      </div>
+  </form>
+</div>
+{% endblock BlockName%}

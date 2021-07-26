@@ -1,0 +1,43 @@
+{% extends 'admin_base.html' %}
+{% block title %} python {% endblock title %}
+{% block BlockName %}
+<div class="container">
+    <form action="{{ url_for('python_submit')}}" method="post">
+        <div>
+            <label for="chapterid">Chapter Number</label><br>
+            <textarea id="chapterid" name="chapterid" placeholder="Chapter number" style="height:50px; width: 570px;"></textarea>
+          </div>
+      <div>
+      <label for="title">Title</label><br>
+      <textarea id="title" name="title" placeholder="Your Title.." style="height:50px; width: 570px;"></textarea>
+    </div>
+    <div>
+      <label for="explain">Explaination</label><br>
+      <textarea id="explain" name="explain" placeholder="Explain Here.." style="height:200px; width: 570px;"></textarea>
+    </div>
+  <div>
+      <label for="example">Example</label><br>
+      <textarea id="example" name="example" placeholder="Write something.." style="height:200px; width: 570px;" ></textarea>
+    </div>
+    <div>
+        <input type="submit" value="Submit" id="submitbtn">
+    </div>
+    </form>
+</div>
+  
+
+    <h1>Introduction</h1>    
+    <p id="p1">
+        
+            <pre style="height: 200px; width: 400px;">
+                <code>
+from flask import Flask
+
+app = Flask(__name__)
+
+
+                </code>
+            </pre>
+        
+    </p>
+{% endblock BlockName%}

@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block title %} Introduction {% endblock title %}
+{% block BlockName %}
+<div class="row-type-container">
+    <div class="linkContainer"> 
+        <h3>Index</h3>
+        <ul>
+            <li><a href="{{ url_for('Python_Introduction')}}"><b>Introduction</b></a></li>
+            <li><a href="{{ url_for('Python_Module')}}">module in python</a></li>
+            <li><a href="{{ url_for('Python_Comment')}}">Comment escape sequence & print statement</a></li>
+            <li><a href="{{ url_for('Python_String_Slicing')}}">string slicing and other function</a></li>
+            <li><a href="{{ url_for('Python_List')}}">python list & list function</a></li>
+            <li><a href="#">dictionary and its function explained</a></li>
+            <li><a href="#">sets in python</a></li>
+            <li><a href="#">if else and elif condition</a></li>
+            <li><a href="#">loop in python</a></li>
+            <li><a href="#">else with for loop</a></li>
+            <li><a href="#">braek and continue statement</a></li>
+            <li><a href="#">operator in python</a></li>
+            <li><a href="#">sort hand if else notation</a></li>
+            <li><a href="#">functions and Docstring</a></li>
+            <li><a href="#">exception handling</a></li>
+            <li><a href="#">python file IO basics</a></li>
+            <li><a href="#">open() and read()</a></li>
+            <li><a href="#">writting  and appending to a file</a></li>
+            <li><a href="#">seek() and tell()</a></li>
+            <li><a href="#">using <b>with</b> block to open python file</a></li>
+            <li><a href="#">scope, Global variable and Global keyword</a></li>
+            <li><a href="#">recurtion in python</a></li>
+            <li><a href="#">Anonymous Lambda function</a></li>
+            <li><a href="#">Python external</a></li>
+            <li><a href="#">f-string</a></li>
+            <li><a href="#">__args and __kwargs</a></li>
+            <li><a href="#">time module</a></li>
+            <li><a href="#">virtual environment</a></li>
+            <li><a href="#">Enumerate function</a></li>
+            <li><a href="#">how <b>import</b> works in python</a></li>
+            <li><a href="#">if __name__=='__main__':</a></li>
+            <li><a href="#">join function</a></li>
+            <li><a href="#">map, filter in python</a></li>
+            <li><a href="#">Healthy Programmer</a></li>
+            <li><a href="#">Decorator in python</a></li>
+            <li><a href="#">classes</a></li>
+            <li><a href="#">static method in python</a></li>
+            <li><a href="#">abstraction and encapsulation</a></li>
+            <li><a href="#">inheritance</a></li>
+            <li><a href="#">public, private, and protected</a></li>
+            <li><a href="#">polymorphism in python</a></li>
+            <li><a href="#">super() and overriding in class</a></li>
+            <li><a href="#">diamond shape problem in multiple inheritance</a></li>
+            <li><a href="#">operator overloading</a></li>
+            <li><a href="#">abstract base class</a></li>
+            <li><a href="#">setters</a></li>
+            <li><a href="#">object introspection</a></li>
+            <li><a href="#">generators</a></li>
+            <li><a href="#">comprehensions</a></li>
+            <li><a href="#">function catching</a></li>
+            <li><a href="#">else & except</a></li>
+            <li><a href="#">coroutine</a></li>
+            <li><a href="#">os module</a></li>
+            <li><a href="#">regular expression</a></li>
+            <li><a href="#">convert .py to .exe</a></li>
+            <li><a href="#">inspect module</a></li>
+            <li><a href="#">request module</a></li>
+            <li><a href="#">json module</a></li>
+            <li><a href="#">pickle module</a></li>
+            <li><a href="#">rais</a></li>
+            <li><a href="#">argrporse module</a></li>
+            <li><a href="#">package</a></li>
+        </ul>
+        
+    </div>
+    <div class="infoContainer">
+        <div class="row-container-left">
+            <h3 class="headingTitle">Python Introduction</h3>
+            <div class="next-btn" style="margin-left: auto;">
+                <a href="{{url_for('Python_Module')}}">NEXT</a>
+            </div>
+        </div>
+        <p style="text-indent: 5%;"> 
+            &nbsp;&nbsp;<strong>Python</strong> is a general purpose, dynamic, high-level, 
+            and interpreted programming language. 
+            It supports Object Oriented programming approach to develop applications. 
+            It is simple and easy to learn and provides lots of high-level data structures.
+        </p>
+        <h3 class="headingTitle">Python History</h3>
+        <p>
+            Python was invented by Guido van Rossum in 1991.
+            Guido van Rossum was a fan of the popular BBC comedy show of that time,
+            "Monty Python's Flying Circus". 
+            So he decided to pick the name Python for his newly created programming language.
+        </p>
+        <h3 class="headingTitle">Why learn python?</h3>
+        <p>
+            Python provides many useful features to the programmer.
+            <ul>
+                <li>Easy to use and Learn</li>
+                <li>Expressive Language</li>
+                <li>Interpreted Language</li>
+                <li>Object-Oriented Language</li>
+                <li>GUI Programming Support</li>
+                <li>etc</li>
+            </ul>
+        </p>
+        <h3 class="headingTitle">Where is Python used?</h3>
+        <p>
+            Python is used bellow areas:
+            <ul>
+                <li>Data Science</li>
+                <li>Data mining</li>
+                <li>Desktop applications</li>
+                <li>Mobile applications</li>
+                <li>Software development</li>
+                <li>Artificial intelligence</li>
+                <li>Web Application</li>
+                <li>Machine learning</li>
+                <li>Speech recognitions</li>
+            </ul>
+        </p>
+        <h3 class="headingTitle">Python first program</h3>
+        <p>
+            Unlike the other programming languages, Python provides the facility to execute the code using few lines.
+            For example - Suppose we want to print the "Hello World" program in Python.
+        </p>
+        <h4><strong>Example</strong></h4>
+        <div> 
+            <pre><code class="python">print("Hello World")</code></pre>
+        </div>
+        <h4><strong>Output</strong></h4>
+        <div class="output">
+            Hello World
+        </div>
+        <h3 class="headingTitle">input() method</h3>
+        <p>
+            input() method used for take input from user.<br>
+            let's take an example.
+            <h4><strong>Example</strong></h4>
+            <div>
+<pre><code class="python">name = input("Enter your name: ")
+print("Your name is: ", name)
+</code></pre>
+            </div>
+            <h4><strong>Output</strong></h4>
+            <div class="output">
+                Enter your name: Rahul Sharma<br>
+                Your name is: Rahul Sharma
+            </div>
+        </p>
+
+    </div>
+    <div class="other">
+        <h1>Here will display other content</h1>
+    </div>
+</div>
+
+{% endblock BlockName%}

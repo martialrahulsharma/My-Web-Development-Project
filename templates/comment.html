@@ -1,0 +1,156 @@
+{% extends 'base.html' %}
+{% block title %} comment {% endblock title %}
+{% block BlockName %}
+<div class="row-type-container">
+    <div class="linkContainer"> 
+        <h3>Index</h3>
+        <ul>
+            <li><a href="{{ url_for('Python_Introduction')}}">Introduction</a></li>
+            <li><a href="{{ url_for('Python_Module')}}">module in python</a></li>
+            <li><a href="{{ url_for('Python_Comment')}}"><b>Comment escape sequence & print statement</b></a></li>
+            <li><a href="{{ url_for('Python_String_Slicing')}}">string slicing and other function</a></li>
+            <li><a href="{{ url_for('Python_List')}}">python list & list function</a></li>
+            <li><a href="#">dictionary and its function explained</a></li>
+            <li><a href="#">sets in python</a></li>
+            <li><a href="#">if else and elif condition</a></li>
+            <li><a href="#">loop in python</a></li>
+            <li><a href="#">else with for loop</a></li>
+            <li><a href="#">braek and continue statement</a></li>
+            <li><a href="#">operator in python</a></li>
+            <li><a href="#">sort hand if else notation</a></li>
+            <li><a href="#">functions and Docstring</a></li>
+            <li><a href="#">exception handling</a></li>
+            <li><a href="#">python file IO basics</a></li>
+            <li><a href="#">open() and read()</a></li>
+            <li><a href="#">writting  and appending to a file</a></li>
+            <li><a href="#">seek() and tell()</a></li>
+            <li><a href="#">using <b>with</b> block to open python file</a></li>
+            <li><a href="#">scope, Global variable and Global keyword</a></li>
+            <li><a href="#">recurtion in python</a></li>
+            <li><a href="#">Anonymous Lambda function</a></li>
+            <li><a href="#">Python external</a></li>
+            <li><a href="#">f-string</a></li>
+            <li><a href="#">__args and __kwargs</a></li>
+            <li><a href="#">time module</a></li>
+            <li><a href="#">virtual environment</a></li>
+            <li><a href="#">Enumerate function</a></li>
+            <li><a href="#">how <b>import</b> works in python</a></li>
+            <li><a href="#">if __name__=='__main__':</a></li>
+            <li><a href="#">join function</a></li>
+            <li><a href="#">map, filter in python</a></li>
+            <li><a href="#">Healthy Programmer</a></li>
+            <li><a href="#">Decorator in python</a></li>
+            <li><a href="#">classes</a></li>
+            <li><a href="#">static method in python</a></li>
+            <li><a href="#">abstraction and encapsulation</a></li>
+            <li><a href="#">inheritance</a></li>
+            <li><a href="#">public, private, and protected</a></li>
+            <li><a href="#">polymorphism in python</a></li>
+            <li><a href="#">super() and overriding in class</a></li>
+            <li><a href="#">diamond shape problem in multiple inheritance</a></li>
+            <li><a href="#">operator overloading</a></li>
+            <li><a href="#">abstract base class</a></li>
+            <li><a href="#">setters</a></li>
+            <li><a href="#">object introspection</a></li>
+            <li><a href="#">generators</a></li>
+            <li><a href="#">comprehensions</a></li>
+            <li><a href="#">function catching</a></li>
+            <li><a href="#">else & except</a></li>
+            <li><a href="#">coroutine</a></li>
+            <li><a href="#">os module</a></li>
+            <li><a href="#">regular expression</a></li>
+            <li><a href="#">convert .py to .exe</a></li>
+            <li><a href="#">inspect module</a></li>
+            <li><a href="#">request module</a></li>
+            <li><a href="#">json module</a></li>
+            <li><a href="#">pickle module</a></li>
+            <li><a href="#">rais</a></li>
+            <li><a href="#">argrporse module</a></li>
+            <li><a href="#">package</a></li>
+        </ul>
+        
+    </div>
+    <div class="infoContainer">
+        <div class="row-container-left">
+            <h3 class="headingTitle">Comment</h3>
+            <div class="back-btn">
+                <a href="{{ url_for('Python_Module')}}">BACK</a>
+            </div>
+            <div class="next-btn">
+                <a href="{{ url_for('Python_String_Slicing')}}">NEXT</a>
+            </div>
+        </div>
+        <p>
+            There are two types of comment in python.<br>
+            <ol>
+                <li><b>Single line comment</b></li>
+                <li><b>Multi line comment</b></li>
+            </ol>
+        </p>
+        <h3 class="headingTitle">Single line comment</h3>
+        <p style="text-indent: 5%;"> 
+            Using <b># </b>for single line comment.<br>
+            <b>Example:</b><br>
+            <div>
+<pre><code># this is comment of python for single line</code></pre>                
+            </div>
+        </p>
+        <h3 class="headingTitle">Multi line comment</h3>
+        <p>
+            Using tripple inverted commas for Multi line comment.<br>
+            <b>Example</b><br>
+            <div>
+<pre><code>'''Hi i am 
+multiline
+comment'''
+or
+"""Hi i am 
+also
+multi line comment"""
+</code></pre>                
+            </div>
+        </p>
+        <p>
+            If following code will run then output will come in two line.
+            <div>
+<pre><code>print("India is Great")
+print("There are many rivers")
+</code></pre>                
+            </div>
+        but if we add <b>end=" "</b> statement in print then new line will not be print.
+        <div>
+<pre><code>print('My name is', end=" ")
+print("Yamraj")    
+</code></pre>            
+        </div>
+        if add somthing in <b>end="somthing"</b> then somthing data will be print added.
+        <div>
+<pre><code>print('My name is', end=" and ")
+print("Yamraj")    
+</code></pre>            
+                    </div>        
+        </p>
+        <h3 class="headingTitle">Escape Characters</h3>
+        <p>
+            There are following escape characters in python.
+            <ul>
+                <li>\' (Single Quote)</li>
+                <li>\\ (Backslash)</li>
+                <li>\n 	(New Line)</li>
+                <li>\r (Carriage Return)</li>
+                <li>\t (Tab)</li>
+                <li>\b 	(Backspace)</li>
+                <li>\f 	(Form Feed)</li>
+                <li>\ooo (Octal value)</li>
+                <li>\xhh (Hex value)</li>
+            </ul>
+            see link more info: <a href="https://www.w3schools.com/python/gloss_python_escape_characters.asp">
+                https://www.w3schools.com/python/gloss_python_escape_characters.asp</a>
+        </p>
+    </div>
+    <div class="other">
+        <h1>Here will display other content</h1>
+    </div>
+</div>
+
+{% endblock BlockName%}

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> {% block title %} {% endblock title %}  </title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <!-- following line usung for fonawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/fontawesome.min.css">
+  <!-- following line will create favicon -->
+  <link rel = "icon" href = "{{url_for('static', filename='images/python.png')}}" type = "image/x-icon">
+  <!-- following line using for code block -->
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+
+  <link rel="stylesheet" href="static/css/home.css">
+  <link rel="stylesheet" href="static/css/admin.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="{{url_for('static', filename='js/sent_otp.js')}}"></script>
+  <script src="{{url_for('static', filename='js/password_valid.js')}}"></script>
+  <script src="{{url_for('static', filename='js/signup.js')}}"></script>
+  <script src="{{url_for('static', filename='js/home.js')}}"></script>
+  <script src="{{url_for('static', filename='js/slide.js')}}"></script>
+</head>
+<body>
+  
+  <!-- <div id="slideshow">
+    <div>
+     <img src="{{url_for('static', filename='images/nature1.jpg')}}" style="height: 200px; width: auto;">
+   </div>
+   <div>
+     <img src="{{url_for('static', filename='images/nature.jpg')}}" style="height: 200px; width: auto;">
+   </div>
+ </div> -->
+ 
+  
+  <div class="menu-area">
+    <ul>
+      <li><a href="{{url_for('home')}}">Home</a></li>
+      <li><a href="{{url_for('contact')}}">Contact</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#">Other</a>
+        <ul class="dropdown-1">
+          <li><a href="#" class="pay-boxes">Payment Method</a></li>
+          <li><a href="#">service two</a></li>
+          <li><a href="#">service three</a>
+            <ul class="dropdown-2">
+              <li><a href="#">service four</a></li>
+              <li><a href="#">service five</a></li>
+              <li><a href="#">service six</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>  
+      <li><button class="pay-btn" id="admin-login">Button</button></li>    
+      <li><a href="{{ url_for('admin') }}">admin</a></li>
+    </ul>
+  </div>
+  <!-- <div class="banner-area">
+    <h1>Banner Text</h1>
+  </div> -->
+  
+  
+  <!-- The Modal -->
+<div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+      <h2>Pay to R2Security</h2>
+    </div>
+    <div class="modal-body">
+      <form action="/amount" method="POST">
+        <div class="form-group">
+          <input type="number" name="amount" class="form-control-" placeholder="Enter amount" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+    <div class="modal-footer">
+      <h2>Afetr paid you will notified</h2>
+    </div>
+  </div>
+</div>
+
+{% block BlockName %} 
+    
+  {% endblock BlockName %}
+    <footer>
+      <p>@Copyright 2020-2021 by Rahul sharma. All Rights Reserved.</p>
+    </footer>
+</body>
+
+</html>

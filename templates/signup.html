@@ -1,0 +1,106 @@
+
+{% extends 'base.html' %}
+{% block title %} signup {% endblock title %}
+{% block BlockName %}
+
+<div class="form-container">
+  <h2 style="color: white; text-shadow: 5px 10px 10px; text-align: center;">Registration Form</h2>
+  <form action="{{url_for('Signup')}}" method="post">
+      <div class="inp-container">
+          <input type="text" id="fname" name="firstname" placeholder="First name.." required class="form-inp-field">
+          <input type="text" id="lname" name="lastname" placeholder="Last name.." required class="form-inp-field">
+          <input type="email" id="email" name="email" placeholder="Your Email Address.." required class="form-inp-field">
+      </div>
+      <div class="inp-container">
+              <input type="password" id="pasw" name="password" placeholder="Your Password.." 
+                  class=" input-control form-inp-field">
+              <i class="fa fa-eye-slash password-show" id="eyee"></i>        
+              
+              <select id="country" name="country" required class="form-inp-field">
+                  <option value="">Select Country</option>
+                  <option value="india">India</option>
+                  <option value="nepal">Nepal</option>
+                  <option value="pakistan">Pakistan</option>
+                  <option value="rusia">Rusia</option>
+                  <option value="china">China</option>
+                  <option value="usa">British</option>
+                  <option value="japan">Japan</option>
+                  <option value="australia">Australia</option>
+                  <option value="canada">Canada</option>
+                  <option value="usa">USA</option>
+                </select>
+                <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required class="form-inp-field">
+      </div>
+      <div class="inp-container">
+          <textarea id="subject" name="subject" placeholder="Write something.." class="form-inp-field form-textarea" required></textarea>
+      </div>
+      <div class="inp-container">
+          <input type="submit" value="Submit" id="submitbtn" class="login-btn">
+          <input type="submit" value="Reset" id="submitbtn" class="login-btn">
+      </div>
+  </form>
+</div>
+
+<!-- 
+<h3>Signup Form</h3>
+
+<div class="container">
+  <form action="{{url_for('Signup')}}" method="post">
+    <div>
+    <label for="fname">First Name</label><br>
+    <input type="text" id="fname" name="firstname" placeholder="Your name.." required class="inpfield">
+  </div>
+  <div>
+    <label for="lname">Last Name</label><br>
+    <input type="text" id="lname" name="lastname" placeholder="Your last name.." required class="inpfield">
+  </div>
+  <div>
+    <label for="email">Email</label><br>
+    <input type="email" id="email" name="email" placeholder="Your Email Address.." required class="inpfield">
+  </div>
+<div class="password-show-card">
+    <label for="password">Password</label><br>
+    <input type="password" id="pasw" name="password" placeholder="Your Password.." required class="input-control inpfield">
+    <i class="fa fa-eye-slash password-show"></i>
+    <p id="pswmsg" style="display: none; color: green;"></p>
+    <p id="pswerror" style="display: none; color: red;"></p>
+  </div>
+  <div>
+    <label for="country">Country</label><br>
+    <select id="country" name="country" required class="inpfield">
+      <option value="">Select Country</option>
+      <option value="india">India</option>
+      <option value="nepal">Nepal</option>
+      <option value="pakistan">Pakistan</option>
+      <option value="rusia">Rusia</option>
+      <option value="china">China</option>
+      <option value="usa">British</option>
+      <option value="japan">Japan</option>
+      <option value="australia">Australia</option>
+      <option value="canada">Canada</option>
+      <option value="usa">USA</option>
+    </select>
+  </div>
+<div>
+    <label for="phone">Phone Number</label><br>
+    <input type="text" id="phone" name="phone" placeholder="Your Phone Number.." required class="inpfield">
+  </div>
+<div>
+    <label for="subject">Subject</label><br>
+    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px; width: 570px;" required></textarea>
+  </div>
+<div>
+    {% with messages = get_flashed_messages() %}
+      {% if messages %}
+        {% for message in messages %}  
+          <p>{{ message }}</p>
+        {% endfor %}
+      {% endif %}
+    {% endwith %}
+    <input type="submit" value="Submit" id="submitbtn">
+    <input type="submit" value="Reset" id="submitbtn">
+  </div>
+  </form>
+</div> -->
+
+{% endblock BlockName %}

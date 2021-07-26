@@ -1,0 +1,478 @@
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(https://images.wallpaperscraft.com/image/nature_stallion_horse_animals_rides_sea_72963_1280x720.jpg);
+}
+*{
+  box-sizing: border-box;
+}
+a:hover{
+  text-decoration: none;
+}
+p{
+  line-height: 2;
+  font-family:serif;
+  font-size: 17px;
+}
+p ul li{
+  line-height: 2;
+  font-family:serif;
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #04AA6D;
+  color: black;
+}
+
+/* On screens that are 600px wide or less, make the menu links stack on top of each other instead 
+of next to each other */
+@media screen and (max-width: 600px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+
+   @media screen and (min-width: 600px) {
+    .nav_bar a {
+      float: none;
+      width: 100%;
+    }
+  }
+
+  footer {
+    margin-top: auto;
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 20px;
+    
+  }
+ 
+
+/* From signup page on password field*/
+.password-show{
+  /* position: absolute; */
+  /* font-size:20px;
+  top: 500px;
+  left: 500px; */
+  /* font-size: 20px; */
+  cursor: pointer;
+}
+.form-container{
+  max-width: 100%;
+  border: 1px solid; 
+  padding: 10px;
+  box-shadow: 5px 10px 10px;
+  background-color: rgb(206, 206, 206);
+  display:flex;
+  /* margin-right: 40%; */
+  padding: 10px;
+  overflow:hidden;
+  justify-content: center;
+  flex-direction: column;
+  
+}
+@media screen and (max-width: 600px){
+.form-container{
+  width: 100%;
+  height: auto;
+  /* background-color: brown; */
+  
+  }
+}
+
+
+.inp-container{
+  display: flex;
+  float: left;
+  /* text-align: center; */
+  /* background-color: #7fff00; */
+  flex-direction: row;
+  width: 100%;
+  /* justify-content: center; */
+  overflow: hidden;
+  margin:auto;
+}
+@media screen and (max-width: 600px){
+  .inp-container{
+    flex-direction: column;
+    /* background-color: rgb(22, 255, 1); */
+    }
+}
+.form-inp-field{
+  margin: 10px;
+  padding: 0px;
+  width: 30%;
+  height:40px;
+}
+@media screen and (max-width: 600px){
+  .form-inp-field{
+    width: 100%;
+  }
+}
+#eyee{
+  font-size: 40px;
+  /* color: rgb(245, 17, 17); */
+  /* position: absolute; */
+  
+  margin-top: 10px;
+}
+@media screen and (max-width: 600px){
+  #eye{
+    right: 0%;
+  }
+}
+.form-textarea{
+  width: 93%;
+  height: 100px;
+  resize: none;
+  padding: 10PX;
+
+}
+/* from python intro page */
+.table{
+  background-color: thistle;
+  width: 500px;
+}
+
+/* using coding block */
+/* .linkContainer{
+  float: left;
+  background-color:whitesmoke;
+  padding-left: 20px;
+  width: 300px;
+} */
+.linkContainer{
+  display:flex;
+  float: left;
+  background-color:rgb(173, 171, 171);
+  padding: 20px;
+  /* width: 300px; */
+  flex-direction: column;
+  overflow: hidden;
+}
+.linkContainer b{
+  color: black;
+}
+.linkContainer a:hover{
+  color: red;
+}
+
+.infoContainer{
+  overflow: hidden;
+  float: left;
+  background-color:rgb(173, 171, 171);
+  padding: 20px;
+  /* width: 700px; */
+  display: flex;
+  flex-direction: column;
+}
+
+.output{
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+
+.headingTitle{
+  color:mediumorchid;
+}
+
+.other{
+  float:left;
+  background-color:red;
+  overflow: hidden;
+  padding: 5px;
+  /* width: 345px; */
+}
+
+/* from home page */
+#space{
+  border-collapse: separate;
+  border-spacing: 100px 1em;
+  }
+
+  #heading{
+    text-align: center;
+  }
+
+  /* slide show coding from base.html*/
+  #slideshow { 
+    margin:2px; 
+    position: relative; 
+    width: auto; 
+    height: 200px; 
+    /* padding: 10px;  */
+    /* box-shadow: 0 0 20px rgba(0,0,0,0.4);  */
+  }
+  
+  #slideshow > div { 
+    position: absolute; 
+    /* top: 10px; 
+    left: 10px; 
+    right: 10px; 
+    bottom: 10px;  */
+  }
+
+  /* from home page */
+  .row-type-container{
+    max-width: 100%;
+    border: 1px solid red; 
+    padding: 10px;
+    box-shadow: 5px 10px 10px;
+    background-color: rgb(206, 206, 206);
+    display:flex;
+    /* margin-right: 40%; */
+    
+    overflow:hidden;
+    /* justify-content: center; */
+    flex-direction: row;
+  }
+  @media screen and (max-width:600px) {
+    .row-type-container{
+      flex-direction: column;
+    }
+  }
+  .row-type-container2{
+    width: 100%;
+    border: 1px solid; 
+    padding: 10px;
+    box-shadow: 5px 10px 10px;
+    background-color: rgb(230, 15, 15);
+    display:flex;
+    /* margin-right: 40%; */
+    padding: 10px;
+    overflow:hidden;
+    justify-content: center;
+    flex-direction: row;
+    /* float: left; */
+  }
+  .column-type-container{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    /* width: 100%; */
+    margin: auto;
+  
+  }
+.row-container-left{
+    display:flex;
+}
+.next-btn{
+  background-color:black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  border: 1px solid white;
+  text-align: center;  
+  border-radius: 20px;
+  padding-top: 10px;
+  align-self: center;
+}  
+.back-btn{
+  margin-left: auto;
+  background-color:black;
+  color: white;
+  width: 100px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid white;
+  text-align: center;  
+  border-radius: 20px;  
+  align-self: center; /*using this line <div> will come in center */
+}  
+.row-container-left a:hover{
+  color: white;
+}
+/* -----------------------------------------Start popup box---------------------------- */
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  border: 1px solid #888;
+  width: 50%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+The Close Button */
+.close {
+  color: rgb(243, 8, 8);
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+} 
+
+.close:hover, .close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #1996e9;
+  color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+  padding: 2px 16px;
+  background-color: #1996e9;
+  color: white;
+}
+/* ----------------------------------------End popup box---------------------------------------- */
+/* ----------------------------------------Start dropdown box---------------------------------------- */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu-area a{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* background: darkslategrey; */
+  height: 60px;
+  font-family:Poppins;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+
+}
+.menu-area a:hover{
+  background: tomato;
+  color: #fff;
+}
+.menu-area ul{
+  list-style: none;
+  display: flex;
+}
+.menu-area li{
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+.menu-area li:hover .dropdown-1 > li{
+  display: block;
+  top: 0;
+}
+.dropdown-1 li{
+  display: none;
+  position: relative;
+}
+.dropdown-1{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.dropdown-1 li:hover .dropdown-2 li{
+  display: block;
+}
+.dropdown-2 li{
+  display: none;
+}
+.dropdown-2{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  width: 100%;
+}
+/* ----------------------------------------End dropdown box---------------------------------------- */
+
+/* ----------------------------------------Start Background image---------------------------------------- */
+.banner-area{
+  background-image: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
+  url(https://images.wallpaperscraft.com/image/nature_stallion_horse_animals_rides_sea_72963_1280x720.jpg);
+  -webkit-background-size:cover;
+  background-size:cover;
+  background-position: center center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: calc(100vh - 60px);
+}
+.banner-area h1 {
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 100px;
+	font-family: poppins;
+	letter-spacing: 2px;
+}
+/* ----------------------------------------End Background image---------------------------------------- */
+
+/* ---------------------------------------- Start nav bar button ---------------------------------------- */
+.pay-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  /* background: darkslategrey; */
+  height: 60px;
+  font-family:Poppins;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  border: none;
+}
+/* ---------------------------------------- end nav bar button ---------------------------------------- */

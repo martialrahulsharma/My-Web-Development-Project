@@ -1,0 +1,212 @@
+{% extends 'base.html' %}
+{% block title %} String slicing and other function {% endblock title %}
+{% block BlockName %}
+<div class="row-type-container">
+    <div class="linkContainer"> 
+        <h3>Index</h3>
+        <ul>
+            <li><a href="{{ url_for('Python_Introduction')}}">Introduction</a></li>
+            <li><a href="{{ url_for('Python_Module')}}">module in python</a></li>
+            <li><a href="{{ url_for('Python_Comment')}}">Comment escape sequence & print statement</a></li>
+            <li><a href="{{ url_for('Python_String_Slicing')}}"><b>string slicing and other function</b></a></li>
+            <li><a href="{{ url_for('Python_List')}}">python list & list function</a></li>
+            <li><a href="#">dictionary and its function explained</a></li>
+            <li><a href="#">sets in python</a></li>
+            <li><a href="#">if else and elif condition</a></li>
+            <li><a href="#">loop in python</a></li>
+            <li><a href="#">else with for loop</a></li>
+            <li><a href="#">braek and continue statement</a></li>
+            <li><a href="#">operator in python</a></li>
+            <li><a href="#">sort hand if else notation</a></li>
+            <li><a href="#">functions and Docstring</a></li>
+            <li><a href="#">exception handling</a></li>
+            <li><a href="#">python file IO basics</a></li>
+            <li><a href="#">open() and read()</a></li>
+            <li><a href="#">writting  and appending to a file</a></li>
+            <li><a href="#">seek() and tell()</a></li>
+            <li><a href="#">using <b>with</b> block to open python file</a></li>
+            <li><a href="#">scope, Global variable and Global keyword</a></li>
+            <li><a href="#">recurtion in python</a></li>
+            <li><a href="#">Anonymous Lambda function</a></li>
+            <li><a href="#">Python external</a></li>
+            <li><a href="#">f-string</a></li>
+            <li><a href="#">__args and __kwargs</a></li>
+            <li><a href="#">time module</a></li>
+            <li><a href="#">virtual environment</a></li>
+            <li><a href="#">Enumerate function</a></li>
+            <li><a href="#">how <b>import</b> works in python</a></li>
+            <li><a href="#">if __name__=='__main__':</a></li>
+            <li><a href="#">join function</a></li>
+            <li><a href="#">map, filter in python</a></li>
+            <li><a href="#">Healthy Programmer</a></li>
+            <li><a href="#">Decorator in python</a></li>
+            <li><a href="#">classes</a></li>
+            <li><a href="#">static method in python</a></li>
+            <li><a href="#">abstraction and encapsulation</a></li>
+            <li><a href="#">inheritance</a></li>
+            <li><a href="#">public, private, and protected</a></li>
+            <li><a href="#">polymorphism in python</a></li>
+            <li><a href="#">super() and overriding in class</a></li>
+            <li><a href="#">diamond shape problem in multiple inheritance</a></li>
+            <li><a href="#">operator overloading</a></li>
+            <li><a href="#">abstract base class</a></li>
+            <li><a href="#">setters</a></li>
+            <li><a href="#">object introspection</a></li>
+            <li><a href="#">generators</a></li>
+            <li><a href="#">comprehensions</a></li>
+            <li><a href="#">function catching</a></li>
+            <li><a href="#">else & except</a></li>
+            <li><a href="#">coroutine</a></li>
+            <li><a href="#">os module</a></li>
+            <li><a href="#">regular expression</a></li>
+            <li><a href="#">convert .py to .exe</a></li>
+            <li><a href="#">inspect module</a></li>
+            <li><a href="#">request module</a></li>
+            <li><a href="#">json module</a></li>
+            <li><a href="#">pickle module</a></li>
+            <li><a href="#">rais</a></li>
+            <li><a href="#">argrporse module</a></li>
+            <li><a href="#">package</a></li>
+        </ul>
+        
+    </div>
+    <div class="infoContainer">        
+        <div class="row-container-left">
+            <h3 class="headingTitle">String slicing and other function</h3>
+            <div class="back-btn">
+                <a href="{{ url_for('Python_Comment')}}">BACK</a>
+            </div>
+            <div class="next-btn">
+                <a href="#">NEXT</a>
+            </div>
+        </div>
+        <p style="text-indent: 5%;"> 
+<pre><code class="python">mystr = "I am Yamraj"
+print(mystr[0:5])    
+</code></pre>        
+        <b>Output</b><br>
+        <div class="output">
+            I am
+        </div>
+        above example output 0 to 4 string will be print because 5 will be exclude, it is called string slicing.<br>
+        if we will give extra range in <b>mystr[75]</b> then a <b>error</b> occured that <b>error will be: </b> 
+        'out of range'.
+<pre><code class="python">print(mystr[75])    
+</code></pre>        
+        <div class="output">
+            IndexError: string index out of range
+        </div>
+<pre><code class="python">print(mystr[0:75])    
+</code></pre>        
+        no any error:
+        <div class="output">
+            I am Yamraj
+        </div>
+        if want to print skip characters then:
+
+        </p>
+<pre><code class="python">print(mystr[0:10:2])</code></pre>
+        third index nmber in <b>mystr[0:10:2]</b> is 2 i.e it is skip characters between <b>mystr</b>.<br>
+        if second index not define in <b>mystr</b>  then by default will be length of string <b>mystr</b>.
+        <b>Example</b>
+<pre><code class="python">print(mystr[0:])</code></pre>   
+        <b>Output</b>
+        <div class="output">
+            I am Yamraj
+        </div>
+        if first, second and third index value not given then by default first index will be 0, second length of string and
+        third will be 1.
+<pre><code class="python">print(mystr[ : : ])</code></pre>        
+        <b>Output</b>
+        <div class="output">
+            I am Yamraj
+        </div>
+<pre><code class="python">print(mystr[0: : ])</code></pre>
+        <b>Output</b>
+        <div class="output">
+            I am Yamraj
+        </div>
+        <b>Why: </b>mystr[0 : length of string : default 1]<br>
+
+<pre><code class="python">print(mystr[0:10: ])</code></pre>
+        <b>Output</b>
+        <div class="output">
+            I am Yamraj
+        </div>
+        <b>Why: </b>mystr[0 : 10 : default 1]<br>
+
+<pre><code class="python">print(mystr[ :10: ])</code></pre>
+        <b>Output</b>
+        <div class="output">
+            I am Yamraj
+        </div>
+        <b>Why: </b>mystr[default 0 : 10 : default 1]
+        <p>
+            <br>If want to print apposit side string then use bellow code:
+            <pre><code class="python">print(mystr[ : : -1])</code></pre> 
+            <b>Output</b>           
+            <div class="output">
+                jarmaY ma I
+            </div>
+        </p>
+
+        <h3 class="headingTitle">Other functions</h3>
+        <h4 class="headingTitle">isalnum()</h4>
+        <p>
+            <b>isalnum()</b> function return boolean character <b>True</b> or <b>False</b>.
+            Alphanumeric characters are be without space.<br>
+            <b>Example:</b>
+<pre><code class="python">mystr = "I am Yamraj"
+print(mystr.isalnum())
+</code></pre>
+            <b>Output</b>           
+            <div class="output">
+                False
+            </div>
+
+            <b>Example:</b> without space
+<pre><code class="python">mystr = "IamYamraj"
+print(mystr.isalnum())
+</code></pre>
+            <b>Output</b>           
+            <div class="output">
+                True
+            </div>
+        </p>
+
+        <h4 class="headingTitle">isalpha()</h4>
+        <p>
+            <b>isalnum()</b> function return boolean character <b>True</b> or <b>False</b>.
+            It will be also same output .<br>
+            <b>Example:</b>
+<pre><code class="python">mystr = "I am Yamraj"
+print(mystr.isalpha())
+</code></pre>
+            <b>Output</b>           
+            <div class="output">
+                False
+            </div>
+
+            <b>Example:</b> without space
+<pre><code class="python">mystr = "IamYamraj"
+print(mystr.isalpha())
+</code></pre>
+            <b>Output</b>           
+            <div class="output">
+                True
+            </div>
+        </p>
+        <p>
+            More about <b>string method</b> please visit:
+            <a href="https://www.w3schools.com/python/python_ref_string.asp">
+                https://www.w3schools.com/python/python_ref_string.asp</a>
+        </p>
+        </div>
+        <div class="other">
+            <h1>Here will display other content</h1>
+        </div>
+    </div>
+    
+</div>
+
+{% endblock BlockName%}
